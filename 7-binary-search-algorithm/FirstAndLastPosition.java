@@ -1,6 +1,6 @@
 public class FirstAndLastPosition {
     public static void main(String[] args) {
-        int[] nums = {5,7,7,7,8,8,10};
+        int[] nums = {5,7,7,7,7,8,8,10};
         int target = 7;
 
         int[] ans = searchRange(nums, target);
@@ -17,6 +17,8 @@ public class FirstAndLastPosition {
 
         return ans;
     }
+
+    // this function just returns the index value of target
     static int search(int[] nums, int target, boolean findSearchIndex) {
         int ans = -1;
         int start = 0;
