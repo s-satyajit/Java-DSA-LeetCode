@@ -14,7 +14,7 @@ public class SmallestLetter {
         int end  = letters.length -1;
 
         while(start <= end) {
-            int mid = start + (end - 1)/2;
+            int mid = start + (end - start)/2;
 
             if(letters[mid] > target) {
                 end = mid - 1;
